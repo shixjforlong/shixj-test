@@ -1,0 +1,29 @@
+<view class="content">
+
+  <view class="account">
+    <view class="title">账号</view>
+    <view class="num">
+      <input placeholder='用户名/邮箱/手机号' placeholder-style='color:#999999;' bindinput='accountInput'></input>
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <view class="account">
+       <view class="title">密码</view>
+       <view class="num">
+         <input placeholder='请输入密码' type='password' placeholder-style='color:#999999;' bindblur='pwdBlur'></input>
+       </view>
+  </view>
+  <view class="hr"></view>
+
+ <button disabled="{{disabled}}" type="{{btnstate}}" class="btn" bindtap='login'>登录</button>
+ <view class="operate">
+   <view>
+      <navigator url="../mobile/mobile">手机快速注册</navigator>  
+    </view>
+   <view>
+      <navigator url="../company/company">企业用户注册</navigator> 
+   </view>
+   <view>找回密码</view>
+ </view>
+</view>
