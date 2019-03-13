@@ -1,37 +1,17 @@
-// pages/mobile/mobile.js
+// pages/aboutMe/aboutMe.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    disabled:true,
-    btnstate:"default",
-    mobile:""
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-  },
-  mobileBlur:function(e){
-    var mobile = e.detail.value;
-    if (mobile!=""){
-      this.setData({
-        disabled: false,
-        btnstate: "primary",
-        mobile: mobile
-      });
-    }else{
-       this.setData({
-         disabled: true,
-         btnstate: "default",
-       });
-    }
-  },
-  login:function(){
 
   },
 

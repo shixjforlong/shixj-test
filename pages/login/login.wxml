@@ -1,29 +1,27 @@
-<view class="content">
+<form bindsubmit='loginFormSubmit' bindreset='formRest'>
+   <view class="content">
+      <view class="account">
+        <view class="title">账号</view>
+        <view class="num">
+          <input type='text' name='userName' placeholder='请输入邮箱' placeholder-style='color:#999999;'></input>
+        </view>
+      </view>
+      <view class="hr"></view>
 
-  <view class="account">
-    <view class="title">账号</view>
-    <view class="num">
-      <input placeholder='用户名/邮箱/手机号' placeholder-style='color:#999999;' bindinput='accountInput'></input>
-    </view>
+      <view class="account">
+          <view class="title">密码</view>
+          <view class="num">
+            <input type='password' name='password' placeholder='请输入密码' placeholder-style='color:#999999;'></input>
+          </view>
+      </view>
+      <view class="hr"></view>
+
+     <button  type="primary" class="btn" form-type='submit'>登录</button>
+     <view class="operate">
+      <view><navigator url="../phoneLogin/phoneLogin">短信验证码登录</navigator></view>
+      <view><navigator url="../accountMark/accountMark">如何获取账号密码?</navigator></view>
+    
   </view>
-  <view class="hr"></view>
-
-  <view class="account">
-       <view class="title">密码</view>
-       <view class="num">
-         <input placeholder='请输入密码' type='password' placeholder-style='color:#999999;' bindblur='pwdBlur'></input>
-       </view>
-  </view>
-  <view class="hr"></view>
-
- <button disabled="{{disabled}}" type="{{btnstate}}" class="btn" bindtap='login'>登录</button>
- <view class="operate">
-   <view>
-      <navigator url="../mobile/mobile">手机快速注册</navigator>  
-    </view>
-   <view>
-      <navigator url="../company/company">企业用户注册</navigator> 
-   </view>
-   <view>找回密码</view>
- </view>
 </view>
+</form>
+
